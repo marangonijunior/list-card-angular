@@ -1,4 +1,21 @@
 .home{
     width: 100%;
     height: 100vh;
+
+    .row {
+        display:flex;
+    }
+    .list {
+        flex: 1 1 auto;
+    }
+    .menu {
+        flex: 0 1 auto; 
+        .itemMenuActive {
+            background-color: #153380 !important;
+        }
+        .itemMenuNormal {
+            background-color: #fff;
+        }
+    }
+
 }
