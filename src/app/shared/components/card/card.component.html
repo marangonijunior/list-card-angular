@@ -1,1 +1,15 @@
-<p>card works!</p>
+<div class="trip">
+    <div class="topTrip">
+        <div class="leftTrip" [ngStyle]="{'background-image': 'url(' + item.image + ')', 'height': '100%'}">
+            <div class="bottomButtom" (click)="showMore()">
+                <span><b>{{ item.active ? 'Read less' : 'Read more' }}</b> about this hotel</span>
+                <fa-icon [icon]=" item.active ? faArrowDown : faArrowRight"></fa-icon>
+            </div>
+        </div>
+        <div class="rightTrip"></div>
+    </div>
+    <div class="bottomTrip" *ngIf="item.active">
+        <span>Overview</span>
+        <p> {{item.details}} </p>
+    </div>
+</div>

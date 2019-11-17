@@ -14,7 +14,7 @@
         </div>
         <div class='col-b'>
             <div class='list'>
-                list
+                <app-card *ngFor='let item of items;' [item]='item' ></app-card>
             </div>
         </div>
     </div>

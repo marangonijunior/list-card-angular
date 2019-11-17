@@ -1,0 +1,46 @@
+.trip{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5%;
+    .topTrip{
+        width: 100%;
+        height: 35vh;
+        .leftTrip{
+            background-size: cover;
+            width: 60%;
+            .bottomButtom{
+                position: relative;
+                top: 86%;
+                float: left;
+                height: 5%;
+                width: 50%;
+                padding: 5px;
+                background-color: #fff;
+                color: #153380;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: .4rem;
+                fa-icon{
+                    float: right;
+                    margin-right: 5%;
+                }
+            }
+        }
+        .rightTrip{
+            width: 40%;
+        }
+    }
+    .bottomTrip{
+        span{
+            font-weight: bold;
+            margin-top: 5%;
+            color: #153380;
+        }
+        color: grey;
+        height: 15vh;
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: .4rem;
+        text-align: justify;
+        padding:3%;
+    }
+}

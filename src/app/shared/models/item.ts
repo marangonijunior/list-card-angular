@@ -1,5 +1,5 @@
 export class Item {
-
+    image:string;
     name:string;
     address:string;
     star:number;

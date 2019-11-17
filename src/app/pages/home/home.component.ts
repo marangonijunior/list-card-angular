@@ -5,6 +5,9 @@ import {
   faStar,
 } from '@fortawesome/free-solid-svg-icons';
 
+import { DataService } from '../../core/services/data.service';
+import { Item } from '../../shared/models/item';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -31,10 +34,15 @@ export class HomeComponent implements OnInit {
       active: false,
     }
   ] 
-  constructor() { }
+  items:Array<Item>;
+  
+  constructor(
+    private service: DataService,
+  ) { }
 
   ngOnInit() {
     this.setFilter(0);
+    this.items = this.service.getItems()
   }
 
   setFilter(index){

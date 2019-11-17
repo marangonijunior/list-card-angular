@@ -8,6 +8,7 @@ export class DataService {
 
   listItems:Array<Item> = [
     {
+      image: 'assets/hotel-image-1.png',
       name: 'Iberostar Grande Salome',
       address: 'Costa Adere Tenerife',
       star: 5,
@@ -23,6 +24,7 @@ export class DataService {
       details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. ',
     },
     {
+      image: 'assets/hotel-image-2.png',
       name: 'Aquamarine Golf Hotel',
       address: 'Costa Adere Tenerife',
       star: 4,
@@ -38,6 +40,7 @@ export class DataService {
       details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis egestas. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. ',
     },
     {
+      image: 'assets/hotel-image-3.png',
       name: 'Las Piramides Resort',
       address: 'Costa Adere Tenerife',
       star: 3,
