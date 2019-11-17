@@ -1,17 +1,21 @@
 <div class='home'> 
     <div class='row'>
-        <div class='menu'>
-            <div 
-                *ngFor='let itemMenu of itemsMenus; let i = index' 
-                [ngClass]='itemMenu.active ? "itemMenuNormal itemMenuActive" : "itemMenuNormal"' 
-                (click)='setFilter(i)'
-            >
-                sort by <span>{{itemMenu.name}}</span>
-                <fa-icon [icon]="itemMenu.icon"></fa-icon>
+        <div class='col-a'>
+            <div class='menu'>
+                <div 
+                    *ngFor='let itemMenu of itemsMenus; let i = index' 
+                    [ngClass]='itemMenu.active ? "itemMenuNormal itemMenuActive" : "itemMenuNormal"' 
+                    (click)='setFilter(i)'
+                >
+                    sort by <span>{{itemMenu.name}}</span>
+                    <fa-icon [icon]="itemMenu.icon"></fa-icon>
+                </div>
             </div>
         </div>
-        <div class='list'>
-            list
+        <div class='col-b'>
+            <div class='list'>
+                list
+            </div>
         </div>
     </div>
 </div>

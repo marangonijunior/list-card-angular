@@ -5,17 +5,42 @@
     .row {
         display:flex;
     }
-    .list {
-        flex: 1 1 auto;
-    }
-    .menu {
-        flex: 0 1 auto; 
-        .itemMenuActive {
-            background-color: #153380 !important;
+    .col-a{
+        width: 40%;
+        .menu {
+            width: 50%;
+            margin: 20%;
+
+            font-size: .5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            .itemMenuActive {
+                background-color: #153380 !important;
+                color: #fff !important;
+            }
+            .itemMenuNormal {
+                background-color: #fff;
+                color: #153380;
+                height: 10%;
+                padding: 5px;
+            }
+            span {
+                font-weight: bold;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            fa-icon{
+                float: right;
+                margin-right: 5%;
+            }
         }
-        .itemMenuNormal {
-            background-color: #fff;
-        }
     }
+    .col-b {
+        width: 60%;
+        .list {
+
+        }
+    };
+    
+    
 
 }
