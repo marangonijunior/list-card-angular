@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { 
+import {
   faSortAlphaDown,
   faPoundSign,
   faStar,
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     {
       name: 'alphabetically',
       type: 'name',
-      icon:  faSortAlphaDown,
+      icon: faSortAlphaDown,
       active: false,
     },
     {
@@ -33,9 +33,10 @@ export class HomeComponent implements OnInit {
       icon: faStar,
       active: false,
     }
-  ] 
-  items:Array<Item>;
-  
+  ]
+  items: Array<Item>;
+  selected: string = 'name';
+
   constructor(
     private service: DataService,
   ) { }
@@ -45,11 +46,12 @@ export class HomeComponent implements OnInit {
     this.items = this.service.getItems()
   }
 
-  setFilter(index){
-    this.itemsMenus.map(item => { 
-      item.active = false; 
+  setFilter(index) {
+    this.itemsMenus.map(item => {
+      item.active = false;
       return item;
     });
+    this.selected = this.itemsMenus[index].type;
     this.itemsMenus[index].active = true;
   }
 

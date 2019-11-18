@@ -1,8 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Item } from '../../../shared/models/item';
-import { 
+import {
   faArrowDown,
   faArrowRight,
+  faStar,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -14,8 +15,9 @@ export class CardComponent implements OnInit {
 
   faArrowDown = faArrowDown;
   faArrowRight = faArrowRight;
+  faStar = faStar;
 
-  @Input()item:Array<Item> = [];
+  @Input() item: Array<Item> = [];
 
   constructor() { }
 
@@ -23,7 +25,7 @@ export class CardComponent implements OnInit {
     this.item['active'] = false;
   }
 
-  showMore(){
+  showMore() {
     this.item['active'] = !this.item['active'];
   }
 

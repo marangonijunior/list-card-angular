@@ -1,24 +1,26 @@
 .trip{
-    width: 100%;
+    width: 90%;
     background-color: #fff;
     margin-bottom: 5%;
     .topTrip{
         width: 100%;
-        height: 35vh;
+        height: 40vh;
+        display: inline-flex;
         .leftTrip{
             background-size: cover;
             width: 60%;
+            overflow-y: hidden;
             .bottomButtom{
                 position: relative;
-                top: 86%;
+                top: 85%;
                 float: left;
-                height: 5%;
+                height: 10%;
                 width: 50%;
-                padding: 5px;
+                padding: 3%;
                 background-color: #fff;
                 color: #153380;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: .4rem;
+                font-size: 1rem;
                 fa-icon{
                     float: right;
                     margin-right: 5%;
@@ -27,6 +29,53 @@
         }
         .rightTrip{
             width: 40%;
+            padding: 3%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            display: block;
+            .title {
+                font-weight: bold;
+                color: #153380;
+                display: block;
+                margin-bottom: 3%;
+            }
+            .address {
+                color: grey;
+                display: block;
+                margin-bottom: 3%;
+            }
+            .star {
+                display: block;
+                color: yellow;
+                margin-bottom: 3%;
+            }
+            .passenger {
+                display: block;
+                margin-bottom: 3%;
+            }
+            .date {
+                display: block;
+                margin-bottom: 3%;
+            }
+            .departing {
+                margin-bottom: 3%;
+                display: block;
+            }
+            .pay {
+                width: 100%;
+                height: 38%;
+                text-align:center;
+                background-color: yellow;
+                color: #153380;
+                border-radius: 10px;
+                float: left;
+                font-size: 1.5rem;
+                padding-top: 1%;
+                span {
+                    display: block;
+                    margin-top: 3%;
+                }
+            }
         }
     }
     .bottomTrip{
@@ -35,11 +84,12 @@
             margin-top: 5%;
             color: #153380;
         }
+        overflow: hidden;
         color: grey;
-        height: 15vh;
+        height: 100%;
         background-color: #fff;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: .4rem;
+        font-size: 1rem;
         text-align: justify;
         padding:3%;
     }

@@ -6,7 +6,26 @@
                 <fa-icon [icon]=" item.active ? faArrowDown : faArrowRight"></fa-icon>
             </div>
         </div>
-        <div class="rightTrip"></div>
+        <div class="rightTrip">
+            <span class="title">{{item.name}}</span>
+            <span class="address">{{item.address}}</span>
+            <div class="star">
+                <fa-icon *ngFor="let i of [].constructor(item.star)" [icon]="faStar"></fa-icon>
+            </div>
+            <span class="passenger">
+                <b>{{item.passengers.adults}}</b> adults,
+                <b>{{item.passengers.childrens}}</b> childrens,
+                <b>{{item.passengers.infant}}</b> infant
+            </span>
+            <span class="date">
+                <b>{{item.date | date}}</b> for <b>{{item.days}}</b>
+            </span>
+            <span class="departing">departing from <b>{{item.departing}}</b></span>
+            <div class="pay">
+                <span>Book now</span>
+                <span><b>{{item.price | currency:'GBP' }}</b></span>
+            </div>
+        </div>
     </div>
     <div class="bottomTrip" *ngIf="item.active">
         <span>Overview</span>
